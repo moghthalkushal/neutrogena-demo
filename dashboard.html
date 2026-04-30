@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutrogena Sun AEO/GEO Pilot Dashboard | Sun Answer Hub</title>
+    <meta name="description" content="Pilot dashboard for the Neutrogena Sun AEO/GEO project. BrandRank data, prompt bank, before/after analysis, content readiness checklist, and enterprise scale story.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://moghthalkushal.github.io/neutrogena-demo/dashboard.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23E14D4D'/><text x='50' y='72' font-size='60' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>☀</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="sun-pilot.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<nav class="topnav">
+    <div class="topnav-brand"><span class="brand-dot"></span><span>Neutrogena</span> Sun Answer Hub</div>
+    <div class="topnav-links">
+        <a href="index.html">Answer Hub</a>
+        <a href="mineral-vs-chemical.html">Mineral vs Chemical</a>
+        <a href="neutrogena-ultra-sheer.html">Product Truth</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+    </div>
+</nav>
+<header class="hero">
+    <div class="container">
+        <div class="hero-badge"><i data-lucide="bar-chart-2" style="width:14px;height:14px"></i> AEO/GEO Pilot Dashboard</div>
+        <h1>Neutrogena Sun — <strong>AI Visibility Pilot</strong></h1>
+        <p class="hero-desc">One brand. One category. Four pages. Eight prompts. A repeatable method that scales across the entire Kenvue portfolio.</p>
+    </div>
+</header>
+<main>
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="section-label"><i data-lucide="alert-triangle" style="width:14px;height:14px"></i> The Problem</div>
+            <h2 class="section-title">Neutrogena Sun has a content readiness gap</h2>
+            <div class="section-desc">BrandRank data shows Neutrogena underperforms competitors in AI recommendation share for the Sun category.</div>
+            <div class="grid grid-4 mt-32">
+                <div class="stat-card fade-up"><div class="number coral">3.9</div><div class="label">Neutrogena Sun Score</div></div>
+                <div class="stat-card fade-up stagger-1"><div class="number teal">7.5</div><div class="label">La Roche-Posay Sun Score</div></div>
+                <div class="stat-card fade-up stagger-2"><div class="number gold">~200</div><div class="label">Unbranded Prompts Tested</div></div>
+                <div class="stat-card fade-up stagger-3"><div class="number" style="color:var(--blue)">4</div><div class="label">Leading LLMs Measured</div></div>
+            </div>
+            <div class="callout mt-32"><p><strong>Key insight:</strong> Neutrogena has room to improve its share of AI recommendations in Sun. The driver is AI Content Readiness — the site is not easily ingestible by AI engines.</p></div>
+        </div>
+    </section>
+    <div class="divider container"></div>
+    <section class="section section--alt" id="what-we-built">
+        <div class="container">
+            <div class="section-label"><i data-lucide="layers" style="width:14px;height:14px"></i> What We Built</div>
+            <h2 class="section-title">Four answer-first pages, one product truth object</h2>
+            <div class="grid grid-3 mt-32">
+                <a href="index.html" class="card fade-up" style="text-decoration:none"><div class="card-icon coral">📝</div><h3>Consumer Answer Hub</h3><p>"Best sunscreen for UV protection" — direct answer, structured FAQ, JSON-LD.</p><div class="mt-16"><span class="tag tag--coral">Article + FAQPage</span></div></a>
+                <a href="mineral-vs-chemical.html" class="card fade-up stagger-1" style="text-decoration:none"><div class="card-icon teal">⚖️</div><h3>Comparison Page</h3><p>"Mineral vs chemical sunscreen" — TL;DR, side-by-side table, myths debunked.</p><div class="mt-16"><span class="tag tag--teal">Article Schema</span></div></a>
+                <a href="neutrogena-ultra-sheer.html" class="card fade-up stagger-2" style="text-decoration:none"><div class="card-icon gold">📦</div><h3>Product Truth</h3><p>Ultra Sheer SPF 55 — ingredients, benefits, usage, live JSON-LD preview.</p><div class="mt-16"><span class="tag tag--muted">Product + Offer</span></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="prompt-bank">
+        <div class="container">
+            <div class="section-label"><i data-lucide="message-square" style="width:14px;height:14px"></i> Prompt Bank</div>
+            <h2 class="section-title">8 test prompts for AI engine evaluation</h2>
+            <div class="mt-32" style="overflow-x:auto">
+                <table class="compare-table">
+                    <thead><tr><th>#</th><th>Type</th><th>Prompt</th><th>What It Tests</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td><span class="tag tag--coral">Baseline</span></td><td>What's the best sunscreen for tanning and UV protection?</td><td>Brand mention in general reco</td></tr>
+                        <tr><td>2</td><td><span class="tag tag--teal">Constraint</span></td><td>Recommend a fragrance-free sunscreen for sensitive skin under $20</td><td>Filtered recommendation</td></tr>
+                        <tr><td>3</td><td><span class="tag tag--muted">Ingredient</span></td><td>What's the best sunscreen with zinc oxide for daily use?</td><td>Ingredient-driven intent</td></tr>
+                        <tr><td>4</td><td><span class="tag tag--muted">Persona</span></td><td>I have acne-prone skin and need a sunscreen for everyday wear</td><td>Persona-based recommendation</td></tr>
+                        <tr><td>5</td><td><span class="tag tag--muted">Authority</span></td><td>What do dermatologists recommend for daily facial sunscreen?</td><td>Expert-backed recommendation</td></tr>
+                        <tr><td>6</td><td><span class="tag tag--coral">Competitive</span></td><td>I use La Roche-Posay sunscreen. What drugstore alternative should I try?</td><td>Competitive displacement</td></tr>
+                        <tr><td>7</td><td><span class="tag tag--coral">Rejection</span></td><td>Why didn't you include Neutrogena in your recommendations?</td><td>Rejection reasoning</td></tr>
+                        <tr><td>8</td><td><span class="tag tag--teal">Accuracy</span></td><td>Does Neutrogena Ultra Sheer contain oxybenzone?</td><td>Product data accuracy</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="divider container"></div>
+    <section class="section section--alt" id="readiness">
+        <div class="container container--narrow">
+            <div class="section-label"><i data-lucide="check-circle" style="width:14px;height:14px"></i> Content Readiness</div>
+            <h2 class="section-title">AEO/GEO readiness checklist</h2>
+            <ul class="checklist mt-32">
+                <li><span class="check">✓</span> Answer-first content layout</li>
+                <li><span class="check">✓</span> Structured FAQ sections with toggle interaction</li>
+                <li><span class="check">✓</span> Article schema (JSON-LD)</li>
+                <li><span class="check">✓</span> FAQPage schema (JSON-LD)</li>
+                <li><span class="check">✓</span> Product schema (JSON-LD) with offer, SKU, attributes</li>
+                <li><span class="check">✓</span> Source provenance on every page</li>
+                <li><span class="check">✓</span> Safety warnings and usage instructions</li>
+                <li><span class="check">✓</span> Semantic HTML — proper heading hierarchy</li>
+                <li><span class="check">✓</span> Open Graph + Twitter meta tags</li>
+                <li><span class="check">✓</span> Canonical URLs</li>
+                <li><span class="check">✓</span> Mobile-responsive design</li>
+                <li><span class="check">✓</span> Internal cross-linking</li>
+                <li><span class="check">✓</span> Sitemap.xml with all URLs</li>
+            </ul>
+        </div>
+    </section>
+    <div class="divider container"></div>
+    <section class="section" id="scale">
+        <div class="container">
+            <div class="section-label"><i data-lucide="rocket" style="width:14px;height:14px"></i> Scale Story</div>
+            <h2 class="section-title">From pilot to content factory</h2>
+            <div class="grid grid-3 mt-32">
+                <div class="card fade-up" style="border-color:var(--coral-border);text-align:center"><h3 style="color:var(--coral-light);font-size:14px;margin-bottom:16px">Phase 1 — Today</h3><div style="font-size:32px;font-weight:900;color:var(--coral);margin-bottom:8px">1×1×4</div><p style="font-size:13px">1 brand · 1 category · 4 pages</p></div>
+                <div class="card fade-up stagger-1" style="border-color:rgba(251,191,36,0.25);text-align:center"><h3 style="color:var(--gold);font-size:14px;margin-bottom:16px">Phase 2 — Next</h3><div style="font-size:32px;font-weight:900;color:var(--gold);margin-bottom:8px">3×3×12</div><p style="font-size:13px">3 brands · 3 categories · 12+ pages</p></div>
+                <div class="card fade-up stagger-2" style="border-color:var(--teal-border);text-align:center"><h3 style="color:var(--teal-light);font-size:14px;margin-bottom:16px">Phase 3 — Scale</h3><div style="font-size:32px;font-weight:900;color:var(--teal);margin-bottom:8px">6×N×∞</div><p style="font-size:13px">6 brands · N categories · automated pipeline</p></div>
+            </div>
+            <div class="callout mt-32"><p><strong>The repeatable template:</strong> Every category pilot follows the same structure — Answer Hub + Comparison + Product Truth + Dashboard. The content model, schema patterns, and prompt bank are reusable.</p></div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <p>Neutrogena Sun Answer Hub · AEO/GEO Pilot Dashboard</p>
+    <p style="margin-top:8px">Proof-of-concept: one brand, one category, a repeatable method that scales.</p>
+</footer>
+<script>
+    lucide.createIcons();
+    const obs = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }), { threshold: 0.1 });
+    document.querySelectorAll('.fade-up,.card,.stat-card').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

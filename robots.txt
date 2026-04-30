@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moghthalkushal.github.io/neutrogena-demo/sitemap.xml
