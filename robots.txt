@@ -1,3 +1,24 @@
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+
 User-agent: *
 Allow: /
 Sitemap: https://moghthalkushal.github.io/neutrogena-demo/sitemap.xml
